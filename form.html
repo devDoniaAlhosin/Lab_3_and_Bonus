@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Assets/Style/form.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="image" title="Upload a user avatar icon">
+        <input
+          type="image"
+          name="avatar"
+          src="https://via.placeholder.com/70x70/fa8072/fff?text=Avatar"
+          alt="avatar"
+        />
+      </div>
+      <form action="" method="POST">
+        <input type="text" name="username" placeholder="Username" required />
+        <input type="password" name="pswd" placeholder="Password" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+        <div class="checkbox-container">
+          <input type="checkbox" name="rememberme" id="rememberme" checked />
+          <label for="rememberme">Remember me</label>
+        </div>
+        <input type="submit" value="Register" title="Register to our website" />
+      </form>
+    </div>
+  </body>
+</html>
